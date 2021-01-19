@@ -64,7 +64,7 @@ function setup() {
 
 
 function draw() {
-  background("lightblue");
+  background("black");
   textSize(27);
   fill("green");
   text("Score : "+score,20,30);
@@ -113,7 +113,7 @@ function draw() {
              {
                    score = score + 200;
                    particle=null;
-                   if ( count>= 5)  gameState ="end";
+                   if ( count>= 10)  gameState ="end";
 
              }      
              
@@ -130,7 +130,7 @@ function draw() {
    if (gameState =="end") {
     
     textSize(70);
-    text("GameOver", 200, 350);
+    text("Good score, try to get better XD", 200, 350);
 }
 }
 
